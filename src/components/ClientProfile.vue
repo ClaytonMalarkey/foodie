@@ -1,7 +1,6 @@
 <template>
     <div>
       <h1>Client Profile</h1>
-      <!-- Display and edit client profile information here -->
       <p>Email: {{ email }}</p>
       <p>Name: {{ name }}</p>
       <button @click="editProfile">Edit Profile</button>
@@ -15,11 +14,12 @@
       return {
         email: 'client@example.com',
         name: 'John Doe',
+        // Add more data properties for profile fields
       };
     },
     methods: {
       editProfile() {
-        // Allow the user to edit their profile information
+        // Implement logic to edit the user profile
       },
     },
   }
