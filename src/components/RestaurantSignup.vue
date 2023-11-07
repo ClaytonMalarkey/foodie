@@ -74,11 +74,11 @@
           // Handle the response, set user as authenticated, and store tokens
           console.log('This is response', response)
           // // this.$store.commit('setUser', response.data.user);
-          // this.$router.push('/restaurant'); // Redirect to the profile page
-          // const { restaurant_id, token } = response.data
+          this.$router.push('/restaurant'); // Redirect to the profile page
+          const { restaurant_id, token } = response.data
           // // Store token and client_id in cookies with email as the title
-          // this.$cookies.set('restaurant_token', token)
-          // this.$cookies.set('restaurant_id', restaurant_id)
+          this.$cookies.set('restaurant_token', token)
+          this.$cookies.set('restaurant_id', restaurant_id)
         })
         .catch(error => {
           // Handle registration error, show a message, or redirect to an error page

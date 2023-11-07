@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-
+import ClientDashboard from '../views/ClientDashboard.vue'
+import RestaurantDashboard from "../views/RestaurantDashboard"
 Vue.use(VueRouter)
 
 const routes = [
@@ -10,6 +11,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/restaurantdashboard',
+    name: 'Restraunt Dashboard',
+    component: RestaurantDashboard
+  },
+  {
+    path: '/clientdashboard',
+    name: 'client-dashboard',
+    component: ClientDashboard
   },
   {
     path: '/about',

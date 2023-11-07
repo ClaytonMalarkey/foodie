@@ -54,11 +54,13 @@ export default {
           // Handle the response, set user as authenticated, and store tokens
           console.log('This is response', response)
           // this.$store.commit('setUser', response.data.user);
-          this.$router.push('/client'); // Redirect to the profile page
+          
           const { client_id, token } = response.data
           // Store token and client_id in cookies with email as the title
-          this.$cookies.set('token', token)
+          this.$cookies.set('Client_token', token)
           this.$cookies.set('client_id', client_id)
+          this.$router.push('/clientdashboard')
+      
         })
         .catch(error => {
           // Handle registration error, show a message, or redirect to an error page
