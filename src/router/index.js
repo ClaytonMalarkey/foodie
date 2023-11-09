@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ClientDashboard from '../views/ClientDashboard.vue'
-import RestaurantDashboard from "../views/RestaurantDashboard"
+import RestaurantDashboard from "../views/RestaurantDashboard.vue"
+import Discover from "../components/Discover.vue"
+import Restaurant from '../components/Restaurant.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -11,6 +13,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/restaurant',
+    name: 'Restaurant',
+    component: Restaurant
+  },
+  {
+    path: '/discover',
+    name: 'Discover',
+    component: Discover
   },
   {
     path: '/restaurantdashboard',
