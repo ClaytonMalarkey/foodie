@@ -46,6 +46,7 @@ export default {
           // Store token and client_id in cookies with email as the title
           this.$cookies.set("Client_token", token);
           this.$cookies.set("client_id", client_id);
+          this.$router.push('/Discover')
         })
         .catch((error) => {
           // Handle registration error, show a message, or redirect to an error page
