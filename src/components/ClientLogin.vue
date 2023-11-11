@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Client Login</h1>
-    <form @submit="login">
+    <form @submit.prevent="login">
       <input v-model="email" type="email" placeholder="Email" />
       <input v-model="password" type="password" placeholder="Password" />
       <button type="submit">Login</button>
@@ -46,7 +46,7 @@ export default {
           // Store token and client_id in cookies with email as the title
           this.$cookies.set("Client_token", token);
           this.$cookies.set("client_id", client_id);
-          this.$router.push('/Discover')
+          this.$router.push('/Discover');
         })
         .catch((error) => {
           // Handle registration error, show a message, or redirect to an error page

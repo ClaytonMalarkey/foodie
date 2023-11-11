@@ -8,11 +8,11 @@
         <li>{{ item.price }}</li>
         <li>{{ item.image_url }}</li>
         <li>{{ item.description }}</li>
-        <button v-on:click="addToCart(item)">add to cart</button>
+        <button v-on:click="addToCart(item), addToTotal(item.price)">add to cart</button>
       </ul>
     </div>
 
-    <button>Check Out</button>
+    <button v-on:click="checkOut(cart)">Check Out</button>
     
   </div>
 </template>
@@ -28,6 +28,8 @@ export default {
       restaurant: {},
       menu:[],
       cart:[],
+      client_order:[],
+      initial:0,
     };
   },
 
@@ -44,6 +46,16 @@ export default {
       this.cart.push(menuItem);
       console.log(this.cart)
     },
+    checkOut(cart){
+      const client_order = cart.data;
+          // Store token and client_id in cookies with email as the title
+      this.$cookies.set("client_order", client_order);
+      this.$router.push('/ShoppingCart');
+    },
+    addToTotal(price){
+      let total = this.initial + price;
+      this.initial = total;
+    }
   },
 
   created(){

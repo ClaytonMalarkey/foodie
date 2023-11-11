@@ -6,6 +6,7 @@ import ClientDashboard from '../views/ClientDashboard.vue'
 import RestaurantDashboard from "../views/RestaurantDashboard.vue"
 import Discover from "../components/Discover.vue"
 import Restaurant from '../components/Restaurant.vue'
+import ShoppingCart from '../components/ShoppingCart.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/shoppingcart',
+    name: 'home',
+    component: ShoppingCart
   },
   {
     path: '/restaurant',
