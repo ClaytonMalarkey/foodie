@@ -6,7 +6,7 @@
       <input v-model="password" type="password" placeholder="Password">
       <input v-model="imageURL" type="text" placeholder="Profile Image URL">
       <input v-model="firstName" type="text" placeholder="First Name">
-      <input v-model="lastName" type="text" placeholder="Last Name">
+      <input v-model="last_name" type="text" placeholder="Last Name">
       <input v-model="username" type="username" placeholder="username">
       <!-- Add more registration fields as needed -->
       <button type="submit">Signup</button>
@@ -23,9 +23,9 @@ export default {
     return {
       email: '',
       password: '',
-      imageURL: '',
-      firstName: '',
-      lastName: '',
+      image_url: '',
+      first_name: '',
+      last_name: '',
       username: ''
       // Add more data properties for registration fields
     };
@@ -37,9 +37,9 @@ export default {
       const clientData = {
         email: this.email,
         password: this.password,
-        image_url: this.imageURL,
-        first_name: this.firstName,
-        last_name: this.lastName,
+        image_url: this.image_url,
+        first_name: this.first_name,
+        last_name: this.last_name,
         username: this.username
         // Add more properties as needed
       };

@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
 import ClientDashboard from '../views/ClientDashboard.vue'
 import RestaurantDashboard from "../views/RestaurantDashboard.vue"
 import Discover from "../components/Discover.vue"
 import Restaurant from '../components/Restaurant.vue'
 import ShoppingCart from '../components/ShoppingCart.vue'
+import ClientEdit from '../components/ClientEdit.vue'
+import ClientView from '../components/Client.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,6 +15,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/client',
+    name: 'client',
+    component: ClientView
+  },
+  {
+    path: '/clientedit',
+    name: 'clientEdit',
+    component: ClientEdit
   },
   {
     path: '/shoppingcart',
@@ -40,15 +51,7 @@ const routes = [
     name: 'client-dashboard',
     component: ClientDashboard
   },
-  {
-    path: '/about',
-    name: 'about',
-    component: AboutView
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+  
 ]
 
 const router = new VueRouter({

@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Client Signup</h1>
+      <h1>Client edit</h1>
       <form @submit.prevent="signup">
         <input v-model="email" type="email" placeholder="Email">
         <input v-model="password" type="password" placeholder="Password">
@@ -9,7 +9,7 @@
         <input v-model="lastName" type="text" placeholder="Last Name">
         <input v-model="username" type="username" placeholder="username">
         <!-- Add more registration fields as needed -->
-        <button type="submit">Signup</button>
+        <button type="submit">edit client</button>
       </form>
     </div>
   </template>
@@ -23,8 +23,8 @@
         email: '',
         password: '',
         imageURL: '',
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         username: ''
         // Add more data properties for registration fields
       };
@@ -37,8 +37,8 @@
           email: this.email,
           password: this.password,
           image_url: this.imageURL,
-          first_name: this.firstName,
-          last_name: this.lastName,
+          first_name: this.first_name,
+          last_name: this.last_name,
           username: this.username
           // Add more properties as needed
         };

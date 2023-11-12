@@ -15,6 +15,7 @@
       <router-link :to="'/restaurant?restaurant_id=' + restaurant.restaurant_id" ><button>choose {{ restaurant.name }}</button></router-link>
       <hr>
     </div>
+    <router-link :to="ClientDashboard"><button>Client Dashboard</button></router-link>
     <hr>
   </ul>
   </div>
@@ -48,7 +49,7 @@ export default {
         })
         .catch(error => {
           // Handle registration error, show a message, or redirect to an error page
-          console.error('restaurant registration failed', error);
+          console.error('restaurant discover failed', error);
         });
     // Fetch the list of restaurants from the API when the component is created
     // Store fetched restaurants in this.restaurants
