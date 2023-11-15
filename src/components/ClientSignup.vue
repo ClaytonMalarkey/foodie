@@ -4,8 +4,8 @@
     <form @submit.prevent="signup">
       <input v-model="email" type="email" placeholder="Email">
       <input v-model="password" type="password" placeholder="Password">
-      <input v-model="imageURL" type="text" placeholder="Profile Image URL">
-      <input v-model="firstName" type="text" placeholder="First Name">
+      <input v-model="image_url" type="text" placeholder="Profile Image URL">
+      <input v-model="first_name" type="text" placeholder="First Name">
       <input v-model="last_name" type="text" placeholder="Last Name">
       <input v-model="username" type="username" placeholder="username">
       <!-- Add more registration fields as needed -->

@@ -6,7 +6,7 @@ import RestaurantDashboard from "../views/RestaurantDashboard.vue"
 import Discover from "../components/Discover.vue"
 import Restaurant from '../components/Restaurant.vue'
 import ShoppingCart from '../components/ShoppingCart.vue'
-import ClientEdit from '../components/ClientEdit.vue'
+// import ClientEdit from '../components/ClientEdit.vue'
 import ClientView from '../components/Client.vue'
 Vue.use(VueRouter)
 
@@ -21,11 +21,11 @@ const routes = [
     name: 'client',
     component: ClientView
   },
-  {
-    path: '/clientedit',
-    name: 'clientEdit',
-    component: ClientEdit
-  },
+  // {
+  //   path: '/clientedit',
+  //   name: 'clientEdit',
+  //   component: ClientEdit
+  // },
   {
     path: '/shoppingcart',
     name: 'home',
