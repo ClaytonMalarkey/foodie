@@ -2,8 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/clientdashboard">Client Dashboard</router-link> | 
-      <router-link to="/restaurantdashboard">Restraunt Dashboard</router-link>
+      <router-link v-if="cookie === undefined" to="/clientlogin">Client Login</router-link>
     </nav>
     <router-view/>
   </div>
@@ -11,6 +10,12 @@
 
 <script>
   export default {
+    
+    created(){
+      const cookie = this.$cookies.get("client_id")
+      const token = this.$cookies.get("token")
+      console.log("this is cookie from created in" ,cookie, "and token of", token)
+    }
 
   }
 

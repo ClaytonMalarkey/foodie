@@ -8,7 +8,9 @@ import Restaurant from '../components/Restaurant.vue'
 import ShoppingCart from '../components/ShoppingCart.vue'
 import ClientEdit from '../components/ClientEdit.vue'
 import ClientView from '../components/Client.vue'
-import RestaurantEdit from '../components/RestaurantEdit'
+import RestaurantEdit from '../components/RestaurantEdit.vue'
+import ClientLogin from '../views/ClientLogin.vue'
+import ClientSignup from '../views/ClientSignup.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,6 +18,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/clientsignup',
+    name: 'clientsignup',
+    component: ClientSignup
+  },
+  {
+    path: '/ClientLogin',
+    name: 'Client Login',
+    component: ClientLogin
   },
   {
     path: '/restaurantedit',

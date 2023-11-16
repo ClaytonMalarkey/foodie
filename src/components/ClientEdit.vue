@@ -22,7 +22,8 @@
     data() {
       return {
         email: '',
-        passwo_url: '',
+        pasword:'',
+        image_url: '',
         first_name: '',
         last_name: '',
         username: ''
