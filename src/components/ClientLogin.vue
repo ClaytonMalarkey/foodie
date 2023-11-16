@@ -2,8 +2,8 @@
   <div>
     <h1>Client Login</h1>
     <form @submit.prevent="login">
-      <input v-model="email" type="email" placeholder="Email" />
-      <input v-model="password" type="password" placeholder="Password" />
+      <input v-model="email" type="email" placeholder="Email" /><br>
+      <input v-model="password" type="password" placeholder="Password" /><br>
       <button type="submit">Login</button>
     </form>
   </div>

@@ -3,6 +3,7 @@
       <h1>Restaurant Dashboard</h1>
       <RestaurantSignup></RestaurantSignup>
       <RestaurantLogin></RestaurantLogin>
+      <RestaurantEdit></RestaurantEdit>
       
       <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
       <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -14,11 +15,14 @@
   
   import RestaurantSignup from '@/components/RestaurantSignup.vue';
   import RestaurantLogin from '@/components/RestaurantLogin.vue'
+  import RestaurantEdit from '@/components/RestaurantEdit.vue';
+
   export default {
     name: 'RestaurantDashboard',
     components: {
         RestaurantSignup,
-        RestaurantLogin
+        RestaurantLogin,
+        RestaurantEdit
     }
   
   }

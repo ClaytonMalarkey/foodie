@@ -1,19 +1,20 @@
 <template>
-    <div>
-      <h1>Client edit</h1>
-      <form @submit.prevent="signup">
-        <input v-model="email" type="email" placeholder="Email">
-        <input v-model="password" type="password" placeholder="Password">
-        <input v-model="imageURL" type="text" placeholder="Profile Image URL">
-        <input v-model="firstName" type="text" placeholder="First Name">
-        <input v-model="lastName" type="text" placeholder="Last Name">
-        <input v-model="username" type="username" placeholder="username">
-        <!-- Add more registration fields as needed -->
-        <button type="submit">edit client</button>
-      </form>
-    </div>
-  </template>
-  <script>
+  <div>
+    <h1>Client Signup</h1>
+    <form @submit.prevent="signup">
+      <input v-model="email" type="email" placeholder="Email"><br>
+      <input v-model="password" type="password" placeholder="Password"><br>
+      <input v-model="image_url" type="text" placeholder="Profile Image URL"><br>
+      <input v-model="first_name" type="text" placeholder="First Name"><br>
+      <input v-model="last_name" type="text" placeholder="Last Name"><br>
+      <input v-model="username" type="username" placeholder="username"><br>
+      <!-- Add more registration fields as needed -->
+      <button type="submit">Edit Client</button>
+    </form>
+  </div>
+</template>
+
+<script>
   import axios from 'axios';
   
   export default {
@@ -21,8 +22,7 @@
     data() {
       return {
         email: '',
-        password: '',
-        imageURL: '',
+        passwo_url: '',
         first_name: '',
         last_name: '',
         username: ''

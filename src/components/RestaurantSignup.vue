@@ -2,15 +2,15 @@
     <div>
       <h1>Restaurant Signup</h1>
       <form @submit.prevent="signup">
-        <input v-model="email" type="email" placeholder="Email">
-        <input v-model="password" type="password" placeholder="Password">
-        <input v-model="name" type="text" placeholder="name">
-        <input v-model="address" type="text" placeholder="address">
-        <input v-model="phone_number" type="text" placeholder="phone number">
-        <input v-model="bio" type="text" placeholder="bio">
-        <input v-model="city" type="text" placeholder="city">
-        <input v-model="profile_url" type="text" placeholder="profile url">
-        <input v-model="banner_url" type="text" placeholder="banner url">
+        <input v-model="email" type="email" placeholder="Email"><br>
+        <input v-model="password" type="password" placeholder="Password"><br>
+        <input v-model="name" type="text" placeholder="name"><br>
+        <input v-model="address" type="text" placeholder="address"><br>
+        <input v-model="phone_number" type="text" placeholder="phone number"><br>
+        <input v-model="bio" type="text" placeholder="bio"><br>
+        <input v-model="city" type="text" placeholder="city"><br>
+        <input v-model="profile_url" type="text" placeholder="profile url"><br>
+        <input v-model="banner_url" type="text" placeholder="banner url"><br>
         <!-- Add more registration fields as needed (e.g., restaurant name, address) -->
         <button type="submit">Signup</button>
       </form>

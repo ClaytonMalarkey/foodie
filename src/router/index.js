@@ -6,8 +6,9 @@ import RestaurantDashboard from "../views/RestaurantDashboard.vue"
 import Discover from "../components/Discover.vue"
 import Restaurant from '../components/Restaurant.vue'
 import ShoppingCart from '../components/ShoppingCart.vue'
-// import ClientEdit from '../components/ClientEdit.vue'
+import ClientEdit from '../components/ClientEdit.vue'
 import ClientView from '../components/Client.vue'
+import RestaurantEdit from '../components/RestaurantEdit'
 Vue.use(VueRouter)
 
 const routes = [
@@ -17,15 +18,20 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/restaurantedit',
+    name: 'restaurantedit',
+    component: RestaurantEdit
+  },
+  {
     path: '/client',
     name: 'client',
     component: ClientView
   },
-  // {
-  //   path: '/clientedit',
-  //   name: 'clientEdit',
-  //   component: ClientEdit
-  // },
+  {
+    path: '/ClientEdit',
+    name: 'ClientEdit',
+    component: ClientEdit
+  },
   {
     path: '/shoppingcart',
     name: 'home',
