@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ClientDashboard from '../views/ClientDashboard.vue'
 import RestaurantDashboard from "../views/RestaurantDashboard.vue"
-import Discover from "../components/Discover.vue"
+// import Discover from "../components/Discover.vue"
 import Restaurant from '../components/Restaurant.vue'
 import ShoppingCart from '../components/ShoppingCart.vue'
 import ClientEdit from '../components/ClientEdit.vue'
@@ -11,6 +11,7 @@ import ClientView from '../components/Client.vue'
 import RestaurantEdit from '../components/RestaurantEdit.vue'
 import ClientLogin from '../views/ClientLogin.vue'
 import ClientSignup from '../views/ClientSignup.vue'
+import RestaurantSignup from '../views/RestaurantSignup'
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,17 +21,22 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/restaurant_signup',
+    name: 'restaurant_signup',
+    component: RestaurantSignup
+  },
+  {
     path: '/clientsignup',
     name: 'clientsignup',
     component: ClientSignup
   },
   {
-    path: '/ClientLogin',
+    path: '/client_login',
     name: 'Client Login',
     component: ClientLogin
   },
   {
-    path: '/restaurantedit',
+    path: '/restaurant_edit',
     name: 'restaurantedit',
     component: RestaurantEdit
   },
@@ -40,7 +46,7 @@ const routes = [
     component: ClientView
   },
   {
-    path: '/ClientEdit',
+    path: '/client_edit',
     name: 'ClientEdit',
     component: ClientEdit
   },
@@ -57,15 +63,15 @@ const routes = [
   {
     path: '/discover',
     name: 'Discover',
-    component: Discover
+    component: HomeView
   },
   {
-    path: '/restaurantdashboard',
+    path: '/restaurant_dashboard',
     name: 'Restraunt Dashboard',
     component: RestaurantDashboard
   },
   {
-    path: '/clientdashboard',
+    path: '/client_dashboard',
     name: 'client-dashboard',
     component: ClientDashboard
   },

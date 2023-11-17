@@ -44,7 +44,7 @@ export default {
           this.$router.push("/client"); // Redirect to the profile page
           const { client_id, token } = response.data;
           // Store token and client_id in cookies with email as the title
-          this.$cookies.set("Client_token", token);
+          this.$cookies.set("token", token);
           this.$cookies.set("client_id", client_id);
           this.$router.push('/Discover');
         })
