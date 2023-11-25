@@ -11,7 +11,10 @@ import ClientView from '../components/Client.vue'
 import RestaurantEdit from '../components/RestaurantEdit.vue'
 import ClientLogin from '../views/ClientLogin.vue'
 import ClientSignup from '../views/ClientSignup.vue'
-import RestaurantSignup from '../views/RestaurantSignup'
+import RestaurantSignup from '../views/RestaurantSignup.vue'
+import RestaurantLogin from '../views/RestaurantLogin.vue'
+import AddMenuItem from '../views/AddMenuItem.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -19,6 +22,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/add_menu_item',
+    name: 'add_menu_item',
+    component: AddMenuItem
+  },
+  {
+    path: '/restaurant_login',
+    name: 'RestaurantLogin',
+    component: RestaurantLogin
   },
   {
     path: '/restaurant_signup',

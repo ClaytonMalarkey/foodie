@@ -4,7 +4,7 @@
     <Header></Header>
     <Discover></Discover>
     <router-link to="/client_dashboard"><button>Client login</button></router-link><br>
-    <router-link to="/restaurant_dashboard"><button>Restaurant Login</button></router-link><br>
+    <router-link to="/restaurant_login"><button>Restaurant Login</button></router-link><br>
   </div>
 </template>
 
