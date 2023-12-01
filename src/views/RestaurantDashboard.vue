@@ -14,6 +14,7 @@
       </div>
 
       <button v-on:click="addMenuItem()">add menu item</button>
+      <button v-on:click="deleteRestaurant()">DELETE RESTAURANT</button>
   
       
     </div>
@@ -84,6 +85,9 @@
         }
         return false
       
+      },
+      deleteRestaurant(){
+        this.$router.push('/delete_restaurant');
       }
     },
   

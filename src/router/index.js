@@ -14,6 +14,7 @@ import ClientSignup from '../views/ClientSignup.vue'
 import RestaurantSignup from '../views/RestaurantSignup.vue'
 import RestaurantLogin from '../views/RestaurantLogin.vue'
 import AddMenuItem from '../views/AddMenuItem.vue'
+import DeleteRestaurant from '../views/DeleteRestaurant.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+  path: '/delete_restaurant',
+  name: 'Delete Restaurant',
+  component: DeleteRestaurant
   },
   {
     path: '/add_menu_item',

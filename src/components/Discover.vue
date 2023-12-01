@@ -15,8 +15,6 @@
       <router-link :to="'/restaurant?restaurant_id=' + restaurant.restaurant_id" ><button>choose {{ restaurant.name }}</button></router-link>
       <hr>
     </div>
-    <router-link :to="ClientDashboard"><button>Client Dashboard</button></router-link>
-    <hr>
   </ul>
   </div>
   

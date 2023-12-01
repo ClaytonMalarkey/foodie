@@ -3,8 +3,8 @@
     <h1>home route</h1>
     <Header></Header>
     <Discover></Discover>
-    <router-link to="/client_dashboard"><button>Client login</button></router-link><br>
     <router-link to="/restaurant_login"><button>Restaurant Login</button></router-link><br>
+    <router-link to="/delete_client"><button>DELETE CLIENT</button></router-link>
   </div>
 </template>
 
