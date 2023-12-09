@@ -4,7 +4,7 @@
     <Header></Header>
     <Discover></Discover>
     <router-link to="/restaurant_login"><button>Restaurant Login</button></router-link><br>
-    <router-link to="/delete_client"><button>DELETE CLIENT</button></router-link>
+    <router-link v-if="clientLoggedIn()" to="/delete_client"><button>DELETE CLIENT</button></router-link>
   </div>
 </template>
 
@@ -19,6 +19,16 @@ export default {
   components: {
     Discover,
     Header
+  },
+  methods:{
+    clientLoggedIn(){
+      const clientToken = this.$cookies.get("Client_token")
+      console.log("string of client logged in being triggered", clientToken)
+      if(clientToken){
+        return true
+      }
+      return false
+    }
   }
 
 }
